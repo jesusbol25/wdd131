@@ -1,0 +1,67 @@
+/* 1. Reset básico para eliminar márgenes del navegador */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. El Orquestador (La Placa Base) */
+.main-wrapper {
+    display: grid;
+    width: 1000px; /* Ancho fijo para el sistema */
+    margin-top: 50px;
+    
+    /* Definición de la matriz: 2 columnas */
+    /* La primera ocupa 3 partes (3fr) y la segunda 1 parte (1fr) */
+    grid-template-columns: 3fr 1fr;
+
+    /* EL PLANO ARQUITECTÓNICO */
+    /* Aquí dibujamos la estructura usando los nombres de las áreas */
+    grid-template-areas: 
+        "header header"  /* Fila 1: El header ocupa ambos espacios */
+        "nav    nav"     /* Fila 2: La navegación ocupa ambos espacios */
+        "main   aside"   /* Fila 3: División entre contenido y lateral */
+        "footer footer"; /* Fila 4: El footer vuelve a ocupar todo */
+}
+
+/* 3. Asignación de Componentes a las Áreas */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around; /* Distribuye los enlaces uniformemente */
+}
+
+main {
+    grid-area: main;
+    background-color: #cccccc; /* Gris claro */
+    color: #333;
+    min-height: 400px; /* Altura mínima para que no se vea vacío */
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #ffffff; /* Blanco */
+    color: #333;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
