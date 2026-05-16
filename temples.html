@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="Description" content="Temple album page using css grid and flexbox">
+    <meta name="author" content="Jesus E Bolivar Garcia">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 640px)">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+      <div class="logo">
+         <span>Temple album</span>
+      </div>
+      <button id="menu-button" aria-label="Menu">&#9776;</button>
+      <nav id="nav-menu">
+          <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Old</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Large</a></li>
+          </ul>
+      </nav>  
+    </header>
+
+<main>
+    <h1>Home</h1>
+        <div class="grid-container">
+          <figure>
+            <img src="images/temple-1.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-2.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-1.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-2.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-1.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-2.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-1.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-2.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+          <figure>
+            <img src="images/temple-1.jpg" alt="San Diego California Temple Placeholder" loading="lazy">
+            <figcaption>San Diego California</figcaption>
+          </figure>
+        </div>
+    
+</main>
+ <footer>
+        <p>&copy; <span id="currentyear"></span> 👍 Jesus Bolivar 👍 Brazil</p>
+        <p id="lastModified"></p>
+ </footer>
+</body>
+</html>
