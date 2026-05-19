@@ -1,0 +1,31 @@
+/* HEADER AND NAVIGATION (Desktop) */
+
+
+@media (min-width: 640px) {
+    
+    /* HEADER AND NAVIGATION (Desktop) */
+    #menu-button {
+        display: none; 
+    }
+
+    nav {
+        display: block; 
+        position: static; 
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row; 
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* GRID LAYOUT (Desktop) */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem;
+    }
+
+}
